@@ -1,0 +1,34 @@
+###########################################
+# Sentaurus Visual H-2013.03.
+# Tcl log file.
+#------------------------------------------
+# Date: Jul 24, 2021. 14:12:18.
+# Version: 21.0.10 (1.10)
+# Mode: Interactive (GUI).
+# Mesa: enabled.
+# Hostname: ecelinux2.uwaterloo.ca.
+# Machine: Linux, x86_64, amd64.
+# Kernel: 3.10.0-1160.31.1.el7.x86_64.
+###########################################
+
+load_file /home/hmadaan/ECE730_project/Tspacer_5/dgate_tsi12nm_msh.tdr
+create_plot -dataset dgate_tsi12nm_msh
+select_plots {Plot_dgate_tsi12nm_msh}
+#-> Plot_dgate_tsi12nm_msh
+#-> Plot_dgate_tsi12nm_msh
+#-> dgate_tsi12nm_msh
+zoom_plot -plot Plot_dgate_tsi12nm_msh -reset
+export_view /home/hmadaan/ECE730_project/Tspacer_5/structure.png -plots {Plot_dgate_tsi12nm_msh} -format PNG
+#-> 0
+set_material_prop {Oxide} -geom dgate_tsi12nm_msh -show_mesh
+#-> 0
+set_material_prop {Contact} -geom dgate_tsi12nm_msh -show_mesh
+#-> 0
+set_material_prop {Silicon} -geom dgate_tsi12nm_msh -show_mesh
+#-> 0
+set_material_prop {Si3N4} -geom dgate_tsi12nm_msh -show_mesh
+#-> 0
+set_material_prop {JunctionLine} -geom dgate_tsi12nm_msh -show_mesh
+#-> 0
+export_view /home/hmadaan/ECE730_project/Tspacer_5/structure_msh.png -plots {Plot_dgate_tsi12nm_msh} -format PNG
+#-> 0

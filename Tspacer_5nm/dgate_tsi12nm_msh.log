@@ -1,0 +1,79 @@
+> Compiled Thu Nov  8 19:05:10 PST 2012 on: tcadprod5
+> Running on: Linux ecelinux2.uwaterloo.ca 3.10.0-1160.31.1.el7.x86_64 #1 SMP Thu Jun 10 13:32:12 UTC 2021 x86_64
+
+> Process ID: 20759
+> 
+> Flags used: -d
+> 
+> Reading Boundary from dgate_tsi12nm_bnd.tdr
+> Loaded 24 point(s), 9 region(s), 8 contact(s). done. Time: 0.033796 secs.
+> Statistics from input geometry:
+> 24 vertices, 32 edges, 17 elements (8 segments) (9 polygons)
+> 	8 1D elements
+> 	9 2D elements
+> Average edge length (std): 0.0433125 (0.267964)
+> Min edge length (1): 0.0015
+> 
+> Average area (std): 0.0347176 (0.190569)
+> Min. element area (3): 7.5e-05
+> 
+> Average connectivity: 2.66667
+> Max. connectivity (0): 3
+> 
+> Warning: In refinement region: M_Ox MinElement[0] 0.005 is bigger than MaxElement[0] 0.00125.
+> Setting MinElement[0] to 0.000625, two times smaller than MaxElement[0]
+to get a valid refinement.
+> Redefining MinElement[0] to 0.00125
+> Step sequence to perform: 
+> 	MLRefineGeometry-MLRefineOnSize
+> 
+> Fitting geometry ... Number of elements to check: 1
+> Number of elements to check: 10
+> done. Time: 0.003749 secs.
+> Refining on MaxElementSize ... Number of elements to check: 9
+> Number of elements to check: 677
+> done. Time: 0.036366 secs.
+> Handling green elements ... Number of elements to check: 654
+> Number of elements to check: 2191
+> Number of elements to check: 114
+> Number of elements to check: 110
+> Number of elements to check: 105
+> Number of elements to check: 102
+> Number of elements to check: 102
+> Number of elements to check: 102
+> Number of elements to check: 102
+> Number of elements to check: 102
+> Number of elements to check: 102
+> Number of elements to check: 102
+> Number of elements to check: 102
+> Number of elements to check: 102
+> Number of elements to check: 102
+> Number of elements to check: 102
+> Number of elements to check: 102
+> done. Time: 0.060767 secs.
+> Building final elements ... Number of elements to check: 3218
+> Number of elements to check: 528
+> done. Time: 0.000978 secs.
+> Testing elements ... Number of elements to check: 3572
+> done. Time: 0.024379 secs.
+> Preparing data for output... Number of final elements 3572
+> Statistics from Qtree/Oc-tree:
+> 3414 vertices, 6985 edges, 3732 elements (160 segments) (528 triangles) (3044 rectangles)
+> 	160 1D elements
+> 	3572 2D elements
+> Average edge length (std): 0.00198207 (0.380593)
+> Min edge length (1831): 9.76562e-05
+> 
+> Average area (std): 0.000158146 (0.082257)
+> Min. element area (979): 1.62125e-08
+> 
+> Min. element angle (497): 1.01451 degrees.
+> Max. element angle (0): 90 degrees.
+> Average connectivity: 4.09197
+> Max. connectivity (402): 7
+> 
+> done. Time: 0.028162 secs.
+> 
+> Total time : 0.188197 secs.
+> Saving mesh `dgate_tsi12nm_msh' in TDR format...
+> Interpolating data ... done

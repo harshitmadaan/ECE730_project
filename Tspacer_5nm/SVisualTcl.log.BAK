@@ -1,0 +1,68 @@
+###########################################
+# Sentaurus Visual H-2013.03.
+# Tcl log file.
+#------------------------------------------
+# Date: Jul 24, 2021. 13:58:41.
+# Version: 21.0.10 (1.10)
+# Mode: Interactive (GUI).
+# Mesa: enabled.
+# Hostname: ecelinux2.uwaterloo.ca.
+# Machine: Linux, x86_64, amd64.
+# Kernel: 3.10.0-1160.31.1.el7.x86_64.
+###########################################
+
+load_file /home/hmadaan/ECE730_project/Tspacer_5/dgate_tsi12nm_msh.tdr
+create_plot -dataset dgate_tsi12nm_msh
+select_plots {Plot_dgate_tsi12nm_msh}
+#-> Plot_dgate_tsi12nm_msh
+#-> Plot_dgate_tsi12nm_msh
+#-> dgate_tsi12nm_msh
+zoom_plot -factor 0.909091
+zoom_plot -factor 0.996984
+zoom_plot -factor 0.996984
+zoom_plot -factor 0.909091
+zoom_plot -factor 1.1
+zoom_plot -factor 1.1
+zoom_plot -factor 1.1
+zoom_plot -factor 1.1
+zoom_plot -factor 1.1
+zoom_plot -factor 1.1
+zoom_plot -factor 1.1
+zoom_plot -factor 1.1
+zoom_plot -factor 1.1
+zoom_plot -factor 1.1
+zoom_plot -factor 1.1
+zoom_plot -factor 1.1
+zoom_plot -factor 1.1
+zoom_plot -factor 1.1
+zoom_plot -factor 1.1
+zoom_plot -factor 1.1
+zoom_plot -factor 1.1
+zoom_plot -factor 0.909091
+zoom_plot -factor 1.1
+zoom_plot -factor 0.909091
+zoom_plot -factor 0.909091
+set_region_prop {Drain} -geom dgate_tsi12nm_msh -hide_bulk
+#-> 0
+set_region_prop {Drain_Spacer_lump_1} -geom dgate_tsi12nm_msh -hide_bulk
+#-> 0
+set_region_prop {Drain_Spacer_lump_2} -geom dgate_tsi12nm_msh -hide_bulk
+#-> 0
+set_region_prop {Drain_Spacer_lump_2} -geom dgate_tsi12nm_msh -show_bulk
+#-> 0
+set_region_prop {Drain_Spacer_lump_1} -geom dgate_tsi12nm_msh -show_bulk
+#-> 0
+set_region_prop {Drain} -geom dgate_tsi12nm_msh -show_bulk
+#-> 0
+set_region_prop {Source} -geom dgate_tsi12nm_msh -hide_bulk
+#-> 0
+set_region_prop {Source} -geom dgate_tsi12nm_msh -show_bulk
+#-> 0
+set_region_prop {Source} -geom dgate_tsi12nm_msh -hide_bulk
+#-> 0
+set_region_prop {Source} -geom dgate_tsi12nm_msh -show_bulk
+#-> 0
+set_region_prop {Source} -geom dgate_tsi12nm_msh -hide_bulk
+#-> 0
+set_region_prop {Source} -geom dgate_tsi12nm_msh -show_bulk
+#-> 0
