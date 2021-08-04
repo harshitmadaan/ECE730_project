@@ -54,21 +54,14 @@ Solve {
       #-b) ramp drain to positive starting voltage
       Quasistationary (
                       InitialStep=0.1 MaxStep=0.5 Minstep=1.e-5
-                      Goal { Parameter=vd.dc Voltage=3 }
+                      Goal { Parameter=vd.dc Voltage=1 }
                       )
                       { Coupled { Poisson Electron Hole } }
     
-      #-c) ramp gate to negative starting voltage
-      Quasistationary (
-                      InitialStep=0.1 MaxStep=0.5 Minstep=1.e-5
-                      Goal { Parameter=vg.dc Voltage=-2 }
-                      )
-                      { Coupled { Poisson Electron Hole } }
-    
-      #-d) ramp gate -2V ...+1V with AC analysis at each step.
+      #-d) ramp gate 0V ...+1V with AC analysis at each step.
       Quasistationary (
                       InitialStep=0.01 MaxStep=0.04 Minstep=1.e-5
-                      Goal { Parameter=vg.dc Voltage=3 }
+                      Goal { Parameter=vg.dc Voltage=1 }
                       )
                       { ACCoupled (
                                   StartFrequency=10 EndFrequency=10
