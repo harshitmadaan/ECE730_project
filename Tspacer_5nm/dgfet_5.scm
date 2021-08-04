@@ -107,11 +107,11 @@
 (sdedr:define-refeval-window "RW_Drain_Spacer" "Rectangle" (position (+ Ldspacer Tspacer) 0 0) (position Ldevice Hdevice 0))
 (sdedr:define-refeval-window "RW_Channel" "Rectangle" (position Lsd (+ Hraise Tox) 0) (position (+ Ldspacer Tspacer) Htox 0))
 (sdedr:define-refeval-window "RW_Channel_Source" "Rectangle" (position Lsd (+ Hraise Tox) 0) (position (+ Lsd Lext) Htox 0))
-(sdedr:define-refeval-window "RW_Channel_Drain" "Rectangle" (position Ldspacer (+ Hraise Tox) 0) (position (+ Ldspacer Tspacer) Htox 0))
-(sdedr:define-refeval-window "RW_Channel_Mid" "Rectangle" (position (+ Lsd Tspacer) (+ Hraise Tox) 0) (position Ldspacer Htox 0))
+(sdedr:define-refeval-window "RW_Channel_Drain" "Rectangle" (position (- (- Ldevice Lsd) Lext) (+ Hraise Tox) 0) (position (- Ldevice Lsd) Htox 0))
+(sdedr:define-refeval-window "RW_Channel_Mid" "Rectangle" (position (+ Lsd Lext) (+ Hraise Tox) 0) (position (- (- Ldevice Lsd) Lext) Htox 0))
 ;Lines
-(sdedr:define-refeval-window "RW_Source_Line" "Line" (position (+ Lsd Tspacer) (+ Hraise Tox) 0) (position (+ Lsd Tspacer) Htox 0))
-(sdedr:define-refeval-window "RW_Drain_Line" "Line" (position Ldspacer (+ Hraise Tox) 0) (position Ldspacer Htox 0))
+(sdedr:define-refeval-window "RW_Source_Line" "Line" (position (+ Lsd Lext) (+ Hraise Tox) 0) (position (+ Lsd Lext) Htox 0))
+(sdedr:define-refeval-window "RW_Drain_Line" "Line" (position (- (- Ldevice Lsd) Lext) (+ Hraise Tox) 0) (position (- (- Ldevice Lsd) Lext) Htox 0))
 
 
 
@@ -127,8 +127,8 @@
 (sdedr:define-constant-profile-region "C_PL_Channel" "C_Channel_Dope" "Channel")
 (sdedr:define-constant-profile-region "C_PL_Source" "C_Source_Dope" "Source")
 (sdedr:define-constant-profile-region "C_PL_Drain" "C_Drain_Dope" "Drain")
-(sdedr:define-constant-profile-region "C_PL_Source_Spacer" "C_Source_Spacer_Dope" "Source_Spacer")
-(sdedr:define-constant-profile-region "C_PL_Drain_Spacer" "C_Drain_Spacer_Dope" "Drain_Spacer")
+(sdedr:define-constant-profile-placement "C_PL_Source_Spacer" "C_Source_Spacer_Dope" "RW_Channel_Source")
+(sdedr:define-constant-profile-placement "C_PL_Drain_Spacer" "C_Drain_Spacer_Dope" "RW_Channel_Drain")
 (sdedr:define-analytical-profile-placement "APP_Source_ext" "G_SDext_Dope" "RW_Source_Line" "Negative" "NoReplace" "Eval" "RW_Channel_Mid" 0 "evalwin")
 (sdedr:define-analytical-profile-placement "APP_Drain_ext" "G_SDext_Dope" "RW_Drain_Line" "Positve" "NoReplace" "Eval" "RW_Channel_Mid" 0 "evalwin")
 
