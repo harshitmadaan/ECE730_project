@@ -1,0 +1,66 @@
+> Compiled Thu Nov  8 19:05:10 PST 2012 on: tcadprod5
+> Running on: Linux ecelinux2.uwaterloo.ca 3.10.0-1160.31.1.el7.x86_64 #1 SMP Thu Jun 10 13:32:12 UTC 2021 x86_64
+
+> Process ID: 1842
+> 
+> Flags used: -d
+> 
+> Reading Boundary from dgate_tspace8_bnd.tdr
+> Loaded 24 point(s), 9 region(s), 8 contact(s). done. Time: 0.033541 secs.
+> Statistics from input geometry:
+> 24 vertices, 32 edges, 17 elements (8 segments) (9 polygons)
+> 	8 1D elements
+> 	9 2D elements
+> Average edge length (std): 0.0445625 (0.265288)
+> Min edge length (1): 0.0015
+> 
+> Average area (std): 0.0348373 (0.190291)
+> Min. element area (3): 7.5e-05
+> 
+> Average connectivity: 2.66667
+> Max. connectivity (0): 3
+> 
+> Warning: In refinement region: M_Ox MinElement[0] 0.005 is bigger than MaxElement[0] 0.00125.
+> Setting MinElement[0] to 0.000625, two times smaller than MaxElement[0]
+to get a valid refinement.
+> Redefining MinElement[0] to 0.00125
+> Step sequence to perform: 
+> 	MLRefineGeometry-MLRefineOnSize
+> 
+> Fitting geometry ... Number of elements to check: 1
+> Number of elements to check: 10
+> done. Time: 0.001921 secs.
+> Refining on MaxElementSize ... Number of elements to check: 9
+> Number of elements to check: 699
+> done. Time: 0.037808 secs.
+> Handling green elements ... Number of elements to check: 673
+> Number of elements to check: 2444
+> Number of elements to check: 13
+> Number of elements to check: 6
+> done. Time: 0.057555 secs.
+> Building final elements ... Number of elements to check: 2961
+> Number of elements to check: 524
+> done. Time: 0.002013 secs.
+> Testing elements ... Number of elements to check: 3313
+> done. Time: 0.022789 secs.
+> Preparing data for output... Number of final elements 3313
+> Statistics from Qtree/Oc-tree:
+> 3154 vertices, 6466 edges, 3467 elements (154 segments) (524 triangles) (2789 rectangles)
+> 	154 1D elements
+> 	3313 2D elements
+> Average edge length (std): 0.00232384 (0.389382)
+> Min edge length (2913): 4.88281e-05
+> 
+> Average area (std): 0.00017082 (0.084199)
+> Min. element area (1522): 9.91821e-09
+> 
+> Min. element angle (519): 1.24121 degrees.
+> Max. element angle (0): 90 degrees.
+> Average connectivity: 4.10019
+> Max. connectivity (407): 7
+> 
+> done. Time: 0.026434 secs.
+> 
+> Total time : 0.182061 secs.
+> Saving mesh `dgate_tspace8_msh' in TDR format...
+> Interpolating data ... done

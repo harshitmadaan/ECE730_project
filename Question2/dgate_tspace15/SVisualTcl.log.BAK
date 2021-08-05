@@ -1,0 +1,58 @@
+###########################################
+# Sentaurus Visual H-2013.03.
+# Tcl log file.
+#------------------------------------------
+# Date: Aug 03, 2021. 15:42:15.
+# Version: 21.0.10 (1.10)
+# Mode: Interactive (GUI).
+# Mesa: enabled.
+# Hostname: ecelinux2.uwaterloo.ca.
+# Machine: Linux, x86_64, amd64.
+# Kernel: 3.10.0-1160.31.1.el7.x86_64.
+###########################################
+
+load_file /home/da3rana/ECE730/Project/Question2/dgate_tspace5/sat_dgate_tspace5.plt
+create_plot -1d
+select_plots {Plot_1}
+#-> Plot_1
+#-> Plot_1
+#-> sat_dgate_tspace5
+create_curve -plot Plot_1 -dataset {sat_dgate_tspace5} -axisX "Ch_con_2 OuterVoltage" -axisY "Ld_con TotalCurrent"
+#-> Curve_1
+set_axis_prop -plot Plot_1 -axis y -type log
+#-> 0
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+probe_curve {Curve_1} -valueY 1.00106e-05 -plot Plot_1
+#-> 5.38693e-84
+load_file /home/da3rana/ECE730/Project/Question2/dgate_tspace5/dgate_tspace5_msh.tdr
+create_plot -dataset dgate_tspace5_msh
+select_plots {Plot_dgate_tspace5_msh}
+#-> Plot_dgate_tspace5_msh
+#-> Plot_dgate_tspace5_msh
+#-> dgate_tspace5_msh
+probe_curve {Curve_1} -valueY 0.00384114 -plot Plot_1
+#-> 9.66338
+select_plots {Plot_1}
+#-> Plot_1
+select_plots {Plot_dgate_tspace5_msh}
+#-> Plot_dgate_tspace5_msh
+zoom_plot -plot Plot_dgate_tspace5_msh -reset

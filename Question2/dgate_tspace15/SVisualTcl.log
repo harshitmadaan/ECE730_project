@@ -1,0 +1,23 @@
+###########################################
+# Sentaurus Visual H-2013.03.
+# Tcl log file.
+#------------------------------------------
+# Date: Aug 03, 2021. 15:48:01.
+# Version: 21.0.10 (1.10)
+# Mode: Interactive (GUI).
+# Mesa: enabled.
+# Hostname: ecelinux2.uwaterloo.ca.
+# Machine: Linux, x86_64, amd64.
+# Kernel: 3.10.0-1160.31.1.el7.x86_64.
+###########################################
+
+load_file /home/da3rana/ECE730/Project/Question2/dgate_tspace12/sat_dgate_tspace12.plt
+create_plot -1d
+select_plots {Plot_1}
+#-> Plot_1
+#-> Plot_1
+#-> sat_dgate_tspace12
+create_curve -plot Plot_1 -dataset {sat_dgate_tspace12} -axisX "Ch_con_2 OuterVoltage" -axisY "Ld_con TotalCurrent"
+#-> Curve_1
+set_axis_prop -plot Plot_1 -axis y -type log
+#-> 0
