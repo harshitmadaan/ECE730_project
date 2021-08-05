@@ -3,6 +3,7 @@ File{
    Plot      = "dgate_tspace2.tdr"
    Current   = "dgate_tspace2.plt"
    Output    = "dgate_tspace2.log"
+   Parameter = "./models.par" #added for when the dielectric constant was changed
 }
 
 Electrode {

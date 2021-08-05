@@ -7,9 +7,10 @@ Device DGATE {
   }
 
   File {
-      Grid      = "test_msh.tdr"
-      Plot      = "test.tdr"
-      Current   = "test.plt"
+      Grid      = "dgate_tspace2_msh.tdr"
+      Plot      = "dgate_tspace2.tdr"
+      Current   = "dgate_tspace2.plt"
+      Parameter = "./models.par" #added for when the dielectric constant was changed
   }
 
   Physics {
