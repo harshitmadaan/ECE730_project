@@ -26,22 +26,22 @@
 
 
 ; mesh refinement
-(define Xmesh_sd_min 0.01)
-(define Xmesh_sd_max 0.025)
-(define Ymesh_sd_min 0.005)
-(define Ymesh_sd_max 0.01)
-(define Xmesh_channel_min 0.01)
-(define Xmesh_channel_max 0.025)
-(define Ymesh_channel_min 0.00025)
-(define Ymesh_channel_max 0.0005)
-(define Xmesh_spacer_min 0.0125)
-(define Xmesh_spacer_max 0.025)
-(define Ymesh_spacer_min 0.0025)
-(define Ymesh_spacer_max 0.0125)
-(define Xmesh_oxide_min 0.005)
-(define Xmesh_oxide_max 0.00125)
-(define Ymesh_oxide_min 0.00025)
-(define Ymesh_oxide_max 0.001)
+(define Xmesh_sd_min 0.005)
+(define Xmesh_sd_max 0.0125)
+(define Ymesh_sd_min 0.0025)
+(define Ymesh_sd_max 0.005)
+(define Xmesh_channel_min 0.005)
+(define Xmesh_channel_max 0.0125)
+(define Ymesh_channel_min 0.000125)
+(define Ymesh_channel_max 0.00025)
+(define Xmesh_spacer_min 0.00625)
+(define Xmesh_spacer_max 0.0125)
+(define Ymesh_spacer_min 0.00125)
+(define Ymesh_spacer_max 0.00625)
+(define Xmesh_oxide_min 0.0025)
+(define Xmesh_oxide_max 0.000625)
+(define Ymesh_oxide_min 0.000125)
+(define Ymesh_oxide_max 0.0005)
 
 
 ; --- Program run ---
